@@ -1,0 +1,25 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#titre_central{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+}
+p{
+    text-align: justify;
+    font-size: 1.25em;
+
+}
+h1{
+    text-align: center
+}
+.main_card{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+ol>li{
+    font-size: 1.25em;
+}

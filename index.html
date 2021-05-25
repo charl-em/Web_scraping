@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille sur le web scraping </title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+    <div class="w3-container" style="width:90%"> 
+        <h1 class="w3-xxxlarge" id="titre_central" style="text-shadow:1px 1px 0 #444">Le Web Scrapping !?</h1>
+        <div="w3-third">
+            <div style="width:5%"></div>
+            <div class="w3-card-2 w3-panel main_card" style="width:90%;">
+                <p>Le web scraping (parfois appellé harvesting) est une technique d'extraction de contenu de sites web via un script, un logiciel automatique ou d'autres sites dans le but de le transformer pour permettre son utilisation dans un autre contexte, par exemple le réferencement.</p><br>
+                <h2 class="w3-xlarge"><strong>Pourquoi faire du web scraping ?</strong></h2>
+                <p>L'interet du web scrapping est de pouvoir extraire du contenu sur un ou plusieurs sites webs, qui ne peut etre copier-coller sans déformer la structure du document.
+                </br>Il permet de collecter des informations de nature différentes. Le web scrapping est souvent utilisé dans le cadre d'une veille concurrentielle, notamment sur des sites e-commerces.
+                </p>
+                <h2 class="w3-xlarge"><strong>Pour réaliser un scrapping il faut:</strong></h2>
+                <ol>
+                    <li>Créer une liste des pages web à parcourir.</li>
+                    <li>Localiser l'information qui vous intéresse dans ces pages.</li>
+                    <li>Une fois que vous avez identifiés les balises à extraire, vous pouvez créer une boucle qui répéte la meme action pour plusieurs pages.</li>
+                </ol>
+                <h2 class="w3-xlarge"><strong>Logiciels , sites webs et outils de web scraping</strong></h2>
+                <p>Il existe plusieurs sites permettant de faire du web scrapping , ils se différencient par leurs utilisations.Parmi les plus connus et les plus simples d'utilisation on peut citer les sites import.io et kimonolabs.com.
+                    <br> Webscraper estune extension disponible sous Google Chrome qui permet d'etraire les données d'un site trés facilement. Webscraper naviguera sur les sites choisis afin d'en extraire toutes les données. Les données colectées peuvent etre exportés sous forme de CSV.
+                    </br>Le langage python est largement utilisé dans le monde de la data science pour du web scrapping. voici un exemple de scraping simple l'utilisant :
+                    Le scraping ou crawling se fait en 2 étapes : le téléchargement du code HTML de la page à scraper et son parsing. Pour obtenir le contenu de la page web (téléchargement) il suffit de faire une requete HTTP et d'attendre la réponse . Nous utiliserons la bibliotheque requests de Python.
+                    <ol>
+                        <li>Obtention du code source</li>
+                        <p>Premiére étape , emettre une requete HTTP avec la fonction get de requests. A ce niveau du script le code source de la page sest sous forme de chaines de caracteres(str) dans la variable source. Ceci bien entendu sila réponse à la requete a pour code 2XX. </p>
+                        <li>Récuperation d'informations</li>
+                        <p>Pour récuperer les informations qui nous intéressent on utilise un parser de code HTML précisement la classe 'Selector' de Scrapy. On inspecte ensuite le contenu de la page.
+                            Le but est de trouver une caractéristique des élements qu'on recherche , en sebasant sur les attributs et les relations entre les élements.
+                        </p>
+                    </ol>
+                    <br>
+                    <p> Egalement dans certains cas, la réponse qu'on attend ne peut etre obtenue par un simple GET. On peut etre amené à inspecter afin de simuler la requete avec les bons arguments (Headers, Cookies , Payloads) et la bonne méthode(GET ou Post dans la plupart des cas). 
+                        Une autre méthode consiste à utiliser des navigateurs sans tete (Headless Browsers) tel que <span>Selenium</span> pour pouvoir simuler le comportement d'un utilisateur sur le site et récupérer le code ensuite. Cette technique est trés utile quand on veut scraper des sites pour lesquels il faut s'identifier.
+                    </p>
+                   
+                </p>
+            </div>
+            <div style="width:5%"></div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
